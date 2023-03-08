@@ -40,7 +40,7 @@ defmodule War do
     fight(deck.player1,deck.player2,{:up,[]})
   end
 
-  # we first deal with the simple case where there is a higher card appending at the bottom of the winner's pile the new cards
+  # we first deal with the simple case where there is a higher card adding at the bottom of the winner's pile the new cards
   # in the case a player run out of cards return the winner's deck
   defp fight([top1|p1],[top2|p2],{:up,[]}) when top1 > top2 do
     fight(p1++[top1,top2],p2,{:up,[]})
