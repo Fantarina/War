@@ -1,6 +1,6 @@
 # War
 
-War game as requested by a client
+War game implementation
 
 ## Installation
 
